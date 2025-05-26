@@ -205,11 +205,11 @@ li._local{
     display: none;
 }
 
-@media (max-width:1011px){
+@media (max-width:800px){
 
 
     img.gel_img{
-        width: 130px;
+        width: 140px;
     }
 
     div.img_gel{
