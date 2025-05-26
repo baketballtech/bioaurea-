@@ -221,8 +221,11 @@ li._local{
     p#texto_2{
         width: 90vw;
     }
+    #fim_1,#fim_2,#fim_3{
+        display: none;
+    }
 
-    .elemento, #model{
+    #model{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -288,6 +291,11 @@ li._local{
         width: 80%;
         border-radius: 10px;
         margin: 10px;
+    }
+
+    #model{
+        background-image: url("bio.png");
+        background-size: 100% 100%;
     }
 }
 
@@ -462,4 +470,4 @@ form#dados_contato{
     max-width: 500px;
 }
 
-/*passa*/
+/*elemento*/
