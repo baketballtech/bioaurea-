@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: url("cursor.cur"), auto;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+#cabeca{
+    width: 100%;
+    height: 100%;
+
+    background-color: aliceblue;
+    background-image: url("fundo_3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#temas{
+    padding: 5px;
+    display: inline-block;
+    background-color: rgb(252, 198, 169);;
+    border-radius: 10px;
+    margin: 10px;
+    position: fixed;
+    width: 500px;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgb(252, 198, 169);
+}
+
+.li_temas{
+    display: inline-block;
+    padding: 10px;
+    margin: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+.li_temas:hover{
+    background-color: rgb(255, 126, 66);
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+#img{
+    width: 100%;
+    height: 60%;
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#img_bio{
+    margin-left: 50px;
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 70px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgb(247, 191, 158);;
+    background-color: rgba(247, 191, 158, 0.829);
+
+    float: left;
+}
+
+div#gel, #perfume, #maquiagem{
+    margin-top: 100px;
+}
+#texto{
+    margin: 10px;
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.todos{
+    text-align: center;
+    margin: 20px;
+}
+.img_gel{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gel_img{
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 40px;
+    
+}
+
+.elemento{
+    display: inline-block;
+}
+.outros{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+
+}
+.outros_{
+    background-color: rgb(240, 230, 198);
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+footer{
+    margin-top: 200px;
+    padding: 10%;
+    background-color: bisque;
+    overflow-y: auto;
+}
+
+.membros{
+    margin: 20px;
+}
+ul{
+    display: inline-block;
+}
+#img_baixo{
+    width: 200px;
+}
+#texto_2{
+    width: 90%;
+    max-width: 500px;
+    display: inline-block;
+    margin-left: 20px;
+
+
+
+    
+}
+#centro_{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#centra{
+    margin-top: 50px;
+
+}
+#img_nos{
+    width: 100px;
+    background-color: rgba(128, 0, 0, 0.527);
+    display: inline;
+    border-radius: 20px;
+    margin-left: 30px;
+    
+
+}
+#h1_quem{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#local{
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin: 10px;
+    float: right;
+    border: solid 1px rgba(128, 98, 0, 0.527);
+}
+li._local{
+    margin-top: 40px;
+}
+
+#model{
+    background-image: url("modelos_2.jpg");
+    background-size: contain;
+    border-radius: 50px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 10px;
+    box-shadow: 0 20px 10px rgba(12, 12, 12, 0.349);
+
+}
+#menu{
+    color: white;
+    margin: 5px;
+    font-size: 2em;
+    position: fixed;
+    z-index: 9999999;
+    background-color: rgb(248, 189, 140);
+    padding: 4px;
+    border-radius: 5px;
+    display: none;
+}
+
+@media (max-width:1011px){
+    body{
+        overflow-x: hidden;
+    }
+    p#texto_2{
+        width: 90vw;
+    }
+
+    .elemento, #model{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #model{
+        margin-left: 0;
+        width: 98%;
+    }
+    #img_nos{
+        display: none;
+    }
+    #temas{
+        display: none;
+        height: 100%;
+        width: 80%;
+        background-color: rgba(248, 176, 82, 0.425);
+    }
+    .li_temas{
+        display: block;
+    }
+    #menu{
+        display: block;
+        color: white;
+        margin: 5px;
+        font-size: 2em;
+        position: fixed;
+        z-index: 99999;
+        background-color: rgb(255, 209, 149);
+        padding: 4px;
+        border-radius: 5px;
+    }
+    #p2{
+        margin-top: 90%;
+    }
+    #img_bio{
+        backdrop-filter: blur(0);
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top:80%;
+    }
+    #cabeca{
+        background-image: url("fundo_3_mobile.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+    div.sobre_nos{
+        display: block;
+        padding: 10px;
+        max-width: 90vw;
+        width: 100%;
+    }
+    div.sobre_nos:hover{
+        padding-left: 30px;
+        transition: all 2s ease;
+    }
+    p._texto_{
+        width: 100%;
+        line-height: 25px;
+    }
+
+    img._img_nos{
+        width: 80%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*footer*/
+
+.sobre_nos{
+    width: 600px;
+    max-width: 50%;
+    border: solid 1px rgb(247, 165, 99);
+    padding: 30px 10px;
+    padding-left: 30px;
+    margin-top: 100px;
+    border-radius: 0 20px 20px 0;
+    transition: all 2s ease;
+}
+
+.sobre_nos:hover{
+    box-shadow: 0 0 20px rgb(247, 165, 99);
+    padding-left: 100px;
+    transition: all 2s ease;
+}
+
+._texto_{
+    width: 50%;
+    display: inline-block;
+}
+
+._img_nos{
+    width: 40%;
+    margin-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+}
+
+.passa{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 640px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(247, 175, 116);
+}
+#contatos{
+    margin-top: 50px;
+    max-width: 100%;
+}
+.contatos_{
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    border: solid 1px black;
+}
+.contatos_ img{
+    width: 60px;
+}
+
+#dados_contato{
+    padding: 30px;
+    border: solid 1px rgb(247, 165, 99);
+    display: inline-block;
+    margin-top: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(247, 165, 99);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dados_contato label{
+    display: inline-block;
+    width: 70px;
+}
+
+#dados_contato input{
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 1px rgb(247, 165, 99);
+}
+
+.dados_contato{
+    margin: 20px;
+}
+
+#texto_{
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 1px rgb(247, 165, 99);
+}
+
+#mandar{
+    padding: 20px;
+    display: inline-block;
+    width: 50%;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(247, 165, 99);
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.produtos_bi{
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+div.img_gel{
+    text-align: left;
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p{
+    text-align: left;
+}
+
+div#nos_{
+    margin: 50px;
+}
+.outros_{
+    transition: all 2s ease;
+}
+.outros_:hover{
+    background-color: rgb(247, 165, 99);
+    box-shadow: 0 0 30px rgb(255, 115, 0);
+    color: white;
+    transition: all 2s ease;
+}
+
+div.central_p{
+    text-align: center;
+}
+
+.li_temas{
+    transition:all 2s ease;
+}
+
+#local_x{
+    color: black;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="shortcut icon" href="bio.png" type="image/x-icon">
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+        animation: moverBackground 30s linear infinite;
+    }
+    @keyframes moverBackground {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 1000px 0;
+        }
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f7f7;
+        background-image: url("fundo_login.jpg");
+    }
+
+    .container {
+        display: flex;
+        width: 800px;
+        height: 500px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .image-side {
+        flex: 1;
+        background-color: #f2e9e4;
+    }
+
+    .image-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .login-side {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-side h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    form button {
+        padding: 12px;
+        background-color: #e89f5b;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    form button:hover {
+        background-color: #d3584a;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-side">
+      <img src="bio.png" alt="Imagem de cosméticos" />
+    </div>
+    <div class="login-side">
+      <h2>Bem-vinda(o)!</h2>
+      <form>
+        <input type="text" placeholder="Usuário" id="nome" required />
+        <input type="password" placeholder="Senha" id="senha" required minlength="7"/>
+        <button type="submit" id="entrar">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("entrar").addEventListener("click",function(){
+        let nome=String(document.getElementById("nome").value)
+        let senha=String(document.getElementById("senha").value)
+
+        if(nome.length>1 && senha.length>7){
+            window.location.href="index.html"
+            alert("Seja bem vindo a BioAurea ",nome)
+        }
+        else{
+            alert("Preenche bem os campos...")
+        }
+    })
+  </script>
+</body>
+</html>

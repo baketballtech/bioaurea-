@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioAurea</title>
+    <link rel="shortcut icon" href="bio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=widgets" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="cabeca">
+        <i class="material-icons" id="menu">widgets</i>
+        <div id="temas">
+        <ul>
+            <div id="p2">
+                <a href="index_home.html">
+
+                    <li class="li_temas" id="pt4" >Home</li>
+                </a>
+                <a href="index_sobre.html">
+
+                    <li class="li_temas" id="pt2" >Sobre nós</li>
+                </a>
+                <a href="index_produtos.html">
+
+                    <li class="li_temas" id="pt1">Produtos</li>
+                </a>
+                <a href="index_contatos.html">
+
+                    <li class="li_temas" id="pt3">Contatos</li>
+                </a>
+                <a href="index.html">
+                    <li class="li_temas" id="pt4">Log out</li>
+                </a>
+            </div>
+        </ul>
+    </div>
+    <div id="img">
+        <img src="bio_2.png" alt="img_fundo" id="img_bio">
+    </div>
+  
+</div>
+<div id="nos">
+    <div id="centra">
+        <h1 id="h1_quem">Quem Somos?</h1>
+        <div id="centro_">
+
+            <img src="bio_2.png" alt="" id="img_nos">
+            <p id="texto_2">Na BioÁurea, acreditamos na força da natureza cabo-verdiana como fonte de beleza, bem-estar e autoestima. Nossa empresa nasceu do desejo de valorizar os recursos naturais locais, transformando-os em produtos cosméticos de alta qualidade voltados especialmente para o público feminino e os cuidados com a pele e o rosto.</p>
+
+        </div>
+
+        <div id="materia" class="sobre_nos">
+            <p class="_texto_">
+                Todos os nossos cosméticos são desenvolvidos a partir de matérias-primas naturais produzidas em Cabo Verde, como óleos essenciais, extratos de plantas e ervas medicinais tradicionais. Esse compromisso com o uso de ingredientes locais nos permite garantir um alto padrão de pureza, sustentabilidade e segurança em cada produto que oferecemos.
+            </p>
+            <img src="fundo.png" alt="" id="material" class="_img_nos">
+        </div>
+
+        <div id="beleza" class="sobre_nos">
+            <p class="_texto_">
+                Mais do que beleza, promovemos saúde, autenticidade e conexão com as raízes culturais do nosso arquipélago. Nossa linha de produtos combina ciência, tradição e respeito ao meio ambiente, resultando em fórmulas eficazes, livres de aditivos agressivos e inspiradas na natureza.
+            </p>
+            <img src="fundo_2.jpg" alt="" id="material" class="_img_nos">
+        </div>
+
+        <div id="socios" class="sobre_nos">
+            <p class="_texto_">
+                Somos cinco sócios unidos por um propósito comum: criar uma marca que reflita os valores de igualdade, cooperação e inovação. Cada decisão é tomada de forma coletiva, refletindo a nossa estrutura de gestão participativa e transparente. Na BioÁurea, todos têm voz, todos têm valor — e isso se reflete também no respeito que temos pelos nossos clientes.
+            </p>
+            <img src="socio.avif" alt="" id="material" class="_img_nos">
+        </div>
+        
+    </div>
+
+</div>
+
+
+
+<footer>
+    <h1>Membros</h1>
+    <ul>
+        <li class="membros">Ana Catarina</li>
+        <li class="membros">Eduardo Lopes</li>
+        <li class="membros">Emanuel Monteiro</li>
+        <li class="membros">Janilson Monteiro</li>
+        <li class="membros">Rudrigo Wilson</li>
+    </ul>
+    <img src="bio.png" alt="" id="img_baixo">
+        <ul id="local">
+            <h1>Localização</h1>
+            <a href="https://www.google.com/maps/place/Palmarejo,+Cape+Verde,+Praia/@14.9086839,-23.5276278,21z/data=!4m6!3m5!1s0x935985817a589a1:0x80ad16466595adc8!8m2!3d14.9056578!4d-23.52672!16s%2Fg%2F11c31rpp0f?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="local_x">
+                <li class="_local">Palmarejo, Praia, CV</li>
+            </a>
+            <a href="https://www.google.com/maps/place/Rua+Visc+de+S%C3%A3o+Januario+7,+Praia/@14.9201922,-23.5084622,19.06z/data=!4m15!1m8!3m7!1s0x93598e22ae87709:0x4006989950040429!2sPlateau,+Praia!3b1!8m2!3d14.9192761!4d-23.5081181!16s%2Fg%2F11c5ghz5d7!3m5!1s0x93598e2304ca101:0xc4392eac445be70!8m2!3d14.920463!4d-23.5082402!16s%2Fg%2F11kq74vgcf?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="local_x">
+                <li class="_local">Plateu, Praia, CV</li>
+            </a>
+        </ul>
+</footer>
+<script src="script.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        let jaRolou = false;
+
+        window.addEventListener('scroll', function () {
+            if (!jaRolou) {
+                console.log('O usuário rolou a tela!');
+                jaRolou = true;
+            }
+        });
+
+        setTimeout(() => {
+            if(!jaRolou){
+                const element = document.getElementById('nos');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }, 2000);
+  });
+</script>
+</body>
+</html>
