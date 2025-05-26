@@ -209,11 +209,11 @@ li._local{
 
 
     img.gel_img{
-        width: 120px;
+        width: 130px;
     }
 
     div.img_gel{
-        text-align: right;
+        text-align: center;
         display: block;
     }
     body{
@@ -298,8 +298,11 @@ li._local{
         background-image: url("bio.png");
         background-size: 100% 100%;
     }
-    #elemento{
-        margin: 10px;
+    .img_gel{
+        text-align: center;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 
