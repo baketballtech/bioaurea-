@@ -298,6 +298,9 @@ li._local{
         background-image: url("bio.png");
         background-size: 100% 100%;
     }
+    #elemento{
+        margin: 10px;
+    }
 }
 
 a {
